@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saude+</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <h1><a href="#hero">Saúde+</a></h1>
+        <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Cuidando da sua saúde com quem entende</h2>
+            <p>Nossos profissionais estão prontos para te ajudar a manter uma vida saudável.</p>
+            <button type="button" class="hero-button">Agendar consulta</button>
+            <img src="assets/imgs/hero-consulta.webp" alt="Médica sorrindo enquanto conversa com uma paciente no consultório" width="1200" height="782">
+        </section>
+        <section id="services">
+            <h2>Nossos Serviços</h2>
+            <ul class="service-list">
+                <li class="service-card">
+                    <img src="assets/icons/clinica-geral.svg" alt="" class="service-icon" width="48" height="48">
+                    <h3>Clínica Geral</h3>
+                    <p>Atendimento médico completo para toda a família.</p>
+                </li>
+                <li class="service-card">
+                    <img src="assets/icons/cardiologia.svg" alt="" class="service-icon" width="48" height="48">
+                    <h3>Cardiologia</h3>
+                    <p>Diagnóstico e tratamento de doenças cardíacas.</p>
+                </li>
+                <li class="service-card">
+                    <img src="assets/icons/pediatria.svg" alt="" class="service-icon" width="48" height="48">
+                    <h3>Pediatria</h3>
+                    <p>Cuidado médico especializado para crianças.</p>
+                </li>
+                <li class="service-card">
+                    <img src="assets/icons/odontologia.svg" alt="" class="service-icon" width="48" height="48">
+                    <h3>Odontologia</h3>
+                    <p>Tratamento de doenças bucais e estética dental.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>História da nossa clínica</h2>
+            <p>fundada em 2005, a Clínica Saúde+ tem se dedicado a oferecer os melhores serviços de saúde para toda a família.</p>
+            <ul>
+                <li>20 anos de excelência em saúde</li>
+                <li>5000+ Pacientes atendidos </li>
+                <li>Equipe preparada e capacitada</li>
+            </ul>
+            <img src="assets/imgs/sobre-recepcao.webp" alt="Recepção da clínica, clara e moderna, com plantas e poltronas de espera" width="1200" height="809" loading="lazy">
+        </section>
+        <section id="testimonials">
+            <h2>O que dizem nossos pacientes</h2>
+            <ul>
+                <li class="testimonial-card">
+                    <blockquote>
+                        <p>"Excelente atendimento e profissionais muito competentes!"</p>
+                        <footer>— <cite>João Silva</cite></footer>
+                    </blockquote>
+                </li>
+                <li class="testimonial-card">
+                    <blockquote>
+                        <p>"Recomendo a Clínica Saúde+ para todos os meus familiares."</p>
+                        <footer>— <cite>Maria Oliveira</cite></footer>
+                    </blockquote>
+                </li>
+                <li class="testimonial-card">
+                    <blockquote>
+                        <p>"Sempre fui muito bem atendido, me sinto seguro com eles."</p>
+                        <footer>— <cite>Carlos Souza</cite></footer>
+                    </blockquote>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+            <h3>Endereço</h3>
+            <p>Rua da Saúde, 123 - Centro, Cidade - Estado</p>
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+            <h3>Email</h3>
+            <p>contato@saudeplus.com</p>
+            <form action="#" method="post" class="contact-form">
+                <div class="contact-info">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="message-area">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>@Kauet Dias</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/kauet-dias/">Linkedin</a></li>
+            <li><a href="https://github.com/Kuet1">Github</a></li>
+        </ul>
+    </footer>
+    <dialog id="modal-confirmacao">
+        <button type="button" class="fechar-modal" aria-label="Fechar">x</button>
+        <h2>Mensagem do Desenvolvedor</h2>
+        <p>Olá, se interessou por essa página? Caso esteja interessado em ter uma semelhante é só entrar em contato comigo via Whatsapp logo aqui abaixo!!!</p>
+        <a href="https://wa.link/5r05sy" target="_blank" rel="noopener noreferrer" class="botao-whatsapp">
+            <i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i> Whatsapp
+        </a>
+    </dialog>
+    <script src="assets/script.js"></script>
+</body>
+</html>
